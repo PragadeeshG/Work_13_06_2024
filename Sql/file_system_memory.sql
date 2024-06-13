@@ -1,0 +1,15 @@
+create table if not exists file_system_memory(
+memory_code varchar(255) not null,
+file_system_id varchar(255) null,
+system_access_denied char null,
+root_id Integer null,
+path varchar(255) null,
+file_system_owner varchar(255) null,
+memory_group varchar(255) null,
+parallel_instances varchar(255) null,
+website_file_sharing varchar(255) null,
+storage_tiers Integer null,
+cost_saver_type varchar(255) null,
+linux_instance_type varchar(255) null,
+os_independent_type varchar(255) null,
+constraint file_system_memory_pk primary key(memory_code));
